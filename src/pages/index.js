@@ -34,7 +34,7 @@ export default (() => {
 				text-align="center"
 				font="--lead"
 			>
-				The smartest people work every day to provide the best service and to make our clients happy
+				The smartest people work every day to provide the best service and to make our clients happy .
 			</Text>
 			<Components.EmployeeTable />
 			<Components.EmployeeCard />
