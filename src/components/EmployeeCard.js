@@ -23,7 +23,7 @@ const overrides = {
 		"props": {
 			"color": "--grey",
 			"margin": "0",
-			"children": "Title"
+			"children": "title"
 		}
 	},
 	"name": {
@@ -33,14 +33,6 @@ const overrides = {
 			"font": "--headline3",
 			"margin": "5px 0 5px 0",
 			"children": "Name"
-		}
-	},
-	"address": {
-		"kind": "Text",
-		"props": {
-			"as": "p",
-			"margin": "10px 0 5px 0",
-			"children": "Home address"
 		}
 	},
 	"address": {
@@ -106,11 +98,9 @@ const EmployeeCard = props => {
 	} = rest;
 	return <StackItem {...rest}>
 		<Override slot="StackItemContent" flex-direction="column" />
-		  
 		<Box {...override("box")} background-image={`url(${employee.Photo[0].url})`} />
 		<Text {...override("title")} children={employee.Title} />
 		<Text {...override("name")} children={employee.Name} />
-		<Text {...override("address")} children={employee['Home address']} />
 		<Text {...override("address")} children={employee['Home address']} />
 		<Text {...override("Start date")} children={`Start date: ${employee['Start date']}`} />
 		<Text {...override("Status")} children={employee['Status']} />
