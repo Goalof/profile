@@ -98,7 +98,7 @@ const EmployeeCard = props => {
 	} = rest;
 	return <StackItem {...rest}>
 		<Override slot="StackItemContent" flex-direction="column" />
-		<Box {...override("box")} background-image={`url(${employee.Photo[0].url})`} />
+		<Box {...override("box")} background-image={`url(${employee.Photo.url && employee.Photo.url})`} />
 		<Text {...override("title")} children={employee.Title} />
 		<Text {...override("name")} children={employee.Name} />
 		<Text {...override("address")} children={employee['Home address']} />
