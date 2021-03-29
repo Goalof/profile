@@ -8,6 +8,7 @@ export const onRenderBody = (
         setPostBodyComponents,
     }
 ) => {
+
   setHeadComponents([
     <style>{`
         body {
@@ -16,15 +17,17 @@ export const onRenderBody = (
             font-family: sans-serif;
         }
     `}</style>,
-    ,
+    
+    
   ]);
 
   setPostBodyComponents([
-        <script
-            key="QAPI"
-            dangerouslySetInnerHTML={{
-                __html: `window.QAPI = ${JSON.stringify(QAPI || {})}`
-            }}
-        />,
+    
+    <script
+        key="QAPI"
+        dangerouslySetInnerHTML={{
+            __html: `window.QAPI = ${JSON.stringify(QAPI || {})}`
+        }}
+    />,
   ]);
 }
