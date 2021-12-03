@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://airtable-react.netlify.app/sitemap-index.xml
